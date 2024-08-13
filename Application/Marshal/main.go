@@ -71,4 +71,9 @@ func main() {
 		panic(err3)
 	}
 	fmt.Println(string(bs3))
+
+	mapPtr := new(map[string]string)
+	//(*mapPtr)["key1"] = "value1"
+	fmt.Println(&mapPtr)
+	fmt.Println(*mapPtr)
 }
